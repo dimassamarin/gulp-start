@@ -1,6 +1,6 @@
 .section-contacts {
   &__btn {
-    max-width: 300px;
+    max-width: rem(300);
   }
 }
 .form {
@@ -9,31 +9,31 @@
   &__textarea::placeholder {
     color: #999;
   }
- &__input,
- &__textarea {
-  width: 100%;
-  border: 1px solid #f2f2f2;
-  padding: 10px 20px;
-  margin-bottom: 5px;
-  transition: border .2s ease-in-out;
-  border-radius: 5px;
-	font-size: 15px;
-	 font-family: Roboto, sans-serif;
-	 &::placeholder {
-		font-size: 15px;
-		 font-family: Roboto, sans-serif;
-	 }
- }
- &__input:focus,
- &__textarea:focus {
-  border: 1px solid $red;
- }
- &__textarea {
-  min-height: 130px;
- }
+  &__input,
+  &__textarea {
+    width: 100%;
+    border: 1px solid #f2f2f2;
+    padding: rem(10) rem(20);
+    margin-bottom: rem(5);
+    transition: border 0.2s ease-in-out;
+    border-radius: rem(5);
+    font-size: rem(15);
+    font-family: Roboto, sans-serif;
+    &::placeholder {
+      font-size: rem(15);
+      font-family: Roboto, sans-serif;
+    }
+  }
+  &__input:focus,
+  &__textarea:focus {
+    border: 1px solid $red;
+  }
+  &__textarea {
+    min-height: rem(130);
+  }
 }
 .form {
-	&__btn {
-		padding: 7px;
-	}
+  &__btn {
+    padding: rem(7);
+  }
 }

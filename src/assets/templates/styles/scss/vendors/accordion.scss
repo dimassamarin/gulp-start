@@ -1,49 +1,43 @@
 .accordion {
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-	
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
 
+  &__item {
+    border: 1px solid #000;
+    border-radius: rem(6);
+    cursor: pointer;
+    &.active {
+      .accordion__icons {
+        rotate: 180deg;
+      }
+    }
+  }
 
-	&__item {
-		border: 1px solid #000;
-		border-radius: 6px;
-		cursor: pointer;
-		&.active {
-			.accordion__icons {
-				rotate: 180deg;
-			}
-		}
-	}
+  &__trigger {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(5);
+  }
 
-	&__trigger {
-		display: flex;
-		justify-content: space-between;
-		padding: 5px;
-	}
+  &__title {
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #000;
+  }
 
-	&__title {
-		line-height: 1;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-weight: 600;
-		color: #000;
+  &__icons {
+    width: rem(25);
+    height: rem(25);
+    transition: rotate 0.3s ease-in-out;
+  }
 
-	}
-
-	&__icons {
-		width: 25px;
-		height: 25px;
-		transition: rotate .3s ease-in-out;
-		
-	}
-
-	&__content {
-		display: none;
-		padding: 5px;
-		cursor: default;
-	}
-
-
+  &__content {
+    display: none;
+    padding: rem(5);
+    cursor: default;
+  }
 }
